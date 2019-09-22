@@ -3,6 +3,48 @@
   <groupId>orangehrm4-2-0-1.localhost</groupId>
   <artifactId>AdminAtutomation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
-  
+
+
+<properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <compiler.version>3.8.1</compiler.version>
+        <source.version>1.8</source.version>
+        <selenium.version>3.141.59</selenium.version>
+        <testng.version>7.0.0</testng.version>
+    </properties>
+    
+    <build>
+    
+    
+        <plugins>
+        
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${compiler.version}</version>
+                <configuration>
+                    <source>${source.version}</source>
+                    <target>${source.version}</target>
+                </configuration>
+                <!-- for Java 11 write release 11 <release>11</release> -->
+            </plugin>
+            
+            
+            
+        </plugins>
+        
+    </build>
+    
+    
+    <dependencies>
+    
+    
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        
+		
+    </dependencies>
+
 </project>
